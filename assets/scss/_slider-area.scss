@@ -1,0 +1,94 @@
+.slider-area {
+    position: relative;
+    .single-slider {
+        z-index: 99;
+        position: relative;
+
+        .slider-content {
+            padding-left: 105px;
+            span {
+                color: $theme-color-2;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                display: block;
+            }
+            h2 {
+                font-size: 100px;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 70px;
+            }
+        }
+        .slider-thumb {
+            z-index: 9;
+            padding-top: 170px;
+            padding-bottom: 130px;
+        }
+    }
+}
+
+.s-btn {
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 25px 50px;
+	border-radius: 0px 50px 50px 50px;
+	display: inline-block;
+    color: $theme-color;
+
+    &:hover {
+        color: $theme-color;
+        background-color: $theme-color-2;
+    }
+}
+
+
+.slider {
+    .owl-dots {
+        position: absolute;
+        content: "";
+        right: 35%;
+        bottom: 70px;
+
+        .owl-dot {
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-color: $theme-color-2;
+                width: 2px;
+                height: 0px;
+                left: 50%;
+                bottom: -20px;
+            }
+
+            span {
+                margin: 0 10px;
+                color: #fff;
+                font-size: 18px;
+                font-family: "roboto";
+                width: inherit;
+                height: inherit;
+                display: block;
+            }
+           
+            
+        }
+        .active {
+            position: relative;
+            &::before {
+                height: 20px;
+            }
+            
+            span {
+                color: $theme-color-2;
+                position: relative;
+            }
+        }
+    }
+}

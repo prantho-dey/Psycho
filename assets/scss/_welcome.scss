@@ -1,0 +1,102 @@
+.welcome-area {
+    margin-top: -240px;
+
+    .welcome-thumb {
+        position: relative;
+
+        .welcome-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            .wrapper-img {
+                position: relative;
+            }
+            .wrapper-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h3 {
+                    font-size: 30px;
+                    color: $theme-color;
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .welcome-content {
+        margin-left: 50px;
+        .welcome-top {
+            margin-bottom: 30px;
+            .top-icon {
+                margin-right: 20px;
+            }
+            .top-content {
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $theme-color;
+                }
+            }
+        }
+        h2 {
+            font-size: 50px;
+            color: $theme-color;
+            margin: 0;
+            padding-bottom: 70px;
+        }
+        p {
+            font-size: 16px;
+            color: #848b8a;
+            padding-bottom: 20px;
+        }
+        .welcome-list {
+            .single-list {
+                margin-bottom: 10px;
+                p {
+                    font-size: 27px;
+                    color: $theme-color;
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        background-color: $theme-color-2;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #fff;
+                        font-size: 12px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .ceo-detailes {
+                .detailes {
+                    margin-left: 15px;
+                    a {
+                        font-size: 27px;
+                        display: block;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        color: $theme-color;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: $pragraph-color;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.theme-button {
+    background-color: $theme-color;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+}
