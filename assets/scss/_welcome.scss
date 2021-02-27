@@ -23,12 +23,13 @@
                     color: $theme-color;
                     margin: 0;
                     font-weight: bold;
+                    font-family: inherit;
                 }
             }
         }
     }
     .welcome-content {
-        margin-left: 50px;
+        // margin-left: 50px;
         .welcome-top {
             margin-bottom: 30px;
             .top-icon {
@@ -60,6 +61,8 @@
                 p {
                     font-size: 27px;
                     color: $theme-color;
+                    position: relative;
+                    padding-left: 30px;
                     i {
                         width: 20px;
                         height: 20px;
@@ -70,6 +73,9 @@
                         font-size: 12px;
                         border-radius: 50%;
                         margin-right: 10px;
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
                     }
                 }
             }
@@ -99,4 +105,69 @@
     &:hover {
         color: #fff;
     }
+}
+
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .welcome-area {
+        .welcome-thumb {
+            margin-bottom: 50px;
+        }
+        .welcome-content {
+            h2 {
+                padding-bottom: 30px;
+            }
+            .welcome-top {
+                margin-bottom: 10px;
+            }
+        }
+    }
+  
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .welcome-area {
+        padding-left: 20px;
+        padding-right: 20px;
+        .welcome-thumb {
+            margin-bottom: 50px;
+        }
+        .welcome-content {
+            h2 {
+                padding-bottom: 30px;
+            }
+            .welcome-top {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .welcome-area {
+        padding-left: 50px;
+        padding-right: 50px;
+        .welcome-thumb {
+            margin-bottom: 50px;
+        }
+        .welcome-content {
+            h2 {
+                padding-bottom: 30px;
+            }
+            .welcome-top {
+                margin-bottom: 10px;
+            }
+        }
+    }
+  
 }

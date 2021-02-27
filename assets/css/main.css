@@ -701,9 +701,7 @@ label {
   color: #005046;
   margin: 0;
   font-weight: bold;
-}
-.welcome-area .welcome-content {
-  margin-left: 50px;
+  font-family: inherit;
 }
 .welcome-area .welcome-content .welcome-top {
   margin-bottom: 30px;
@@ -734,6 +732,8 @@ label {
 .welcome-area .welcome-content .welcome-list .single-list p {
   font-size: 27px;
   color: #005046;
+  position: relative;
+  padding-left: 30px;
 }
 .welcome-area .welcome-content .welcome-list .single-list p i {
   width: 20px;
@@ -745,6 +745,9 @@ label {
   font-size: 12px;
   border-radius: 50%;
   margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 .welcome-area .welcome-content .welcome-list .ceo-detailes .detailes {
   margin-left: 15px;
@@ -767,6 +770,48 @@ label {
 }
 .theme-button:hover {
   color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .welcome-area .welcome-thumb {
+    margin-bottom: 50px;
+  }
+  .welcome-area .welcome-content h2 {
+    padding-bottom: 30px;
+  }
+  .welcome-area .welcome-content .welcome-top {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .welcome-area {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .welcome-area .welcome-thumb {
+    margin-bottom: 50px;
+  }
+  .welcome-area .welcome-content h2 {
+    padding-bottom: 30px;
+  }
+  .welcome-area .welcome-content .welcome-top {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .welcome-area {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .welcome-area .welcome-thumb {
+    margin-bottom: 50px;
+  }
+  .welcome-area .welcome-content h2 {
+    padding-bottom: 30px;
+  }
+  .welcome-area .welcome-content .welcome-top {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
