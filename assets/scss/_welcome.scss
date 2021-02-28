@@ -41,6 +41,7 @@
                     font-weight: 400;
                     text-transform: uppercase;
                     color: $theme-color;
+                    padding-bottom: 0;
                 }
             }
         }
@@ -113,12 +114,17 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    
+    .welcome-area {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .welcome-area {
+        padding-left: 50px;
+        padding-right: 50px;
         .welcome-thumb {
             margin-bottom: 50px;
         }
@@ -138,18 +144,46 @@
     .welcome-area {
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 80px;
         .welcome-thumb {
             margin-bottom: 50px;
+            .welcome-wrapper {
+                .wrapper-img {
+                    width: 150px;
+                }
+                .wrapper-content {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
         .welcome-content {
             h2 {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
+                font-size: 30px;
+                line-height: 45px;
+            }
+            p {
+                padding-bottom: 10px;
             }
             .welcome-top {
                 margin-bottom: 10px;
             }
+            .welcome-list {
+                .single-list {
+                    margin-bottom: 0px;
+                    p {
+                        font-size: 20px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
         }
     }
+}
+.theme-button {
+    padding: 20px 40px;
 }
 
 // Small devices (landscape phones, 576px and up)

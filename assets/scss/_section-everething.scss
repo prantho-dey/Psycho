@@ -1,0 +1,74 @@
+.section-title {
+    img {
+        width: 55px;
+        height: 55px;
+    }
+    h2 {
+        font-size: 50px;
+        color: $theme-color;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+
+.btn-white {
+    background-color: #fff;
+    color: $theme-color;
+    padding: 16px 33px;
+
+    &:hover {
+        background-color: $theme-color;
+        color: #fff;
+    }
+}
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .section-title {
+        h2 {
+            font-size: 46px;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .section-title {
+        h2 {
+            font-size: 42px;
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .section-title {
+        h2 {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-title {
+        h2 {
+            font-size: 38px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+    }
+}
