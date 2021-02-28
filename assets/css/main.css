@@ -905,6 +905,7 @@ label {
 .services-area .services-box {
   position: relative;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .services-area .services-box::before {
   position: absolute;
@@ -1011,6 +1012,356 @@ label {
 }
 .services-area .services-box .service-content p {
   color: #ffff;
+}
+
+.dr-area .dr-content p {
+  text-align: justify;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .dr-area {
+    padding-bottom: 150px;
+  }
+}
+.appoinment-area .appointment-form-box {
+  background-color: white;
+  box-shadow: 0px 10px 30px 0px rgba(0, 49, 43, 0.05);
+  margin-top: -103px;
+}
+.appoinment-area .appoinment-box h2 {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px 40px;
+  margin-bottom: 0;
+  line-height: 1;
+  background-color: #005046;
+}
+.appoinment-area .appoinment-box .appoinment-from {
+  background-color: #eea676;
+  display: block;
+  padding: 50px 40px;
+}
+.appoinment-area .appoinment-box .appoinment-from input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  height: 70px;
+  background-color: #f9b89c;
+  color: #005046;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+.appoinment-area .appoinment-box .appoinment-from input::-moz-placeholder {
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.appoinment-area .appoinment-box .appoinment-from input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.appoinment-area .appoinment-box .appoinment-from textarea {
+  width: 100%;
+  background-color: #f9b89c;
+  color: #005046;
+  padding: 20px 20px;
+  border-radius: 10px;
+  height: 140px;
+  border: 0;
+  margin-bottom: 20px;
+}
+.appoinment-area .appoinment-box .appoinment-from textarea::-moz-placeholder {
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.appoinment-area .appoinment-box .appoinment-from textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+  opacity: 1;
+}
+.appoinment-area .appoinment-box .appoinment-from button {
+  background-color: #005046;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.appoinment-area .appoinment-box .appoinment-from button:hover {
+  background-color: #01352f;
+  color: #fff;
+}
+.appoinment-area .counter-box {
+  padding: 70px;
+}
+.appoinment-area .counter-box .appoinment-title .title-content {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3b615e;
+}
+.appoinment-area .counter-box .appoinment-title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.appoinment-area .counter-box .counter-border {
+  position: relative;
+}
+.appoinment-area .counter-box .counter-border::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #dfe3e2;
+  top: 0;
+  bottom: 0;
+  left: 165px;
+  transform: translateX(-50%);
+}
+.appoinment-area .counter-box .counter-border::after {
+  position: absolute;
+  content: "";
+  width: 72%;
+  height: 2px;
+  background-color: #dfe3e2;
+  left: 0;
+  right: 0;
+  top: 129px;
+}
+.appoinment-area .counter-box .counter-items {
+  position: relative;
+}
+.appoinment-area .counter-box .counter-items h2 {
+  font-family: "Rubik", sans-serif;
+  color: #005046;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1;
+  font-size: 60px;
+}
+.appoinment-area .counter-box .counter-items p {
+  font-size: 27px;
+  color: #777;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .appoinment-area .counter-box .counter-border::before {
+    left: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appoinment-area .appointment-form-box {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .appoinment-area .counter-box .counter-border::before {
+    left: 180px;
+  }
+}
+@media (max-width: 575.98px) {
+  .appoinment-area .appointment-form-box {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .appoinment-area .counter-box .counter-border::before {
+    left: 140px;
+  }
+  .appoinment-area .counter-box .appoinment-title h2 {
+    font-size: 28px;
+  }
+  .appoinment-area .counter-box .appoinment-title .title-content p {
+    font-size: 12px;
+    margin-left: -10px;
+  }
+  .appoinment-area .counter-box .counter-items h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .appoinment-area .counter-box .counter-items span {
+    font-size: 12px;
+  }
+  .appoinment-area .counter-box .counter-border::before {
+    display: none;
+  }
+  .appoinment-area .counter-box .counter-border::after {
+    display: none;
+  }
+  .appoinment-area .appoinment-box h2 {
+    font-size: 30px;
+    padding: 30px 30px;
+  }
+  .appoinment-area .appoinment-box .appoinment-title h2 {
+    font-size: 38px;
+  }
+  .appoinment-area .appoinment-box .appoinment-from {
+    padding: 30px 20px;
+  }
+  .appoinment-area .appoinment-box .appoinment-from input {
+    height: 50px;
+  }
+  .appoinment-area .appoinment-box .appoinment-from textarea {
+    height: 100px;
+  }
+}
+.theme-button {
+  margin-right: 0;
+  padding: 15px 30px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .appoinment-area .appointment-form-box {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .appoinment-area .counter-box .counter-border::before {
+    left: 140px;
+  }
+  .appoinment-area .appoinment-box h2 {
+    font-size: 40px;
+    padding: 40px 40px;
+  }
+  .appoinment-area .appoinment-box .appoinment-title h2 {
+    font-size: 38px;
+  }
+}
+.protfolio-area .single-protfolio {
+  position: relative;
+}
+.protfolio-area .single-protfolio .protfolio-image {
+  overflow: hidden;
+}
+.protfolio-area .single-protfolio .protfolio-image img {
+  max-width: 100%;
+  width: 100%;
+}
+.protfolio-area .single-protfolio .protfolio-image::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 70%;
+  background-color: #005046;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-area .single-protfolio .protfolio-image:hover:before {
+  height: 90%;
+  opacity: 0.95;
+  bottom: 50%;
+  visibility: visible;
+  z-index: 9;
+}
+.protfolio-area .single-protfolio .protfolio-image:hover > .protfolio-icon {
+  opacity: 1;
+  visibility: visible;
+}
+.protfolio-area .single-protfolio .protfolio-image:hover > .protfolio-icon a {
+  top: 50%;
+}
+.protfolio-area .single-protfolio .protfolio-image:hover img {
+  transform: scale(1.1);
+}
+.protfolio-area .single-protfolio .protfolio-image:hover > .protfolio-content {
+  bottom: 60px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-icon {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-icon a {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  font-size: 35px;
+  color: #005046;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  z-index: 99;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-icon a:hover {
+  background-color: #eea676;
+  color: #fff;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-content {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-content p {
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 7px;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-content h3 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-area .single-protfolio .protfolio-image .protfolio-content h3:hover a {
+  color: #eea676;
+}
+
+.protfolio-active .single-protfolio .owl-item .center img {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */

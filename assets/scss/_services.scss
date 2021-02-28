@@ -2,6 +2,7 @@
     .services-box {
         position: relative;
         margin-bottom: 30px;
+        overflow: hidden;
         &::before {
             position: absolute;
             content: "";
