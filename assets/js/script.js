@@ -67,24 +67,37 @@
 	};
 
 	// Protfolio Slider
-	$('.protfolio-active').owlCarousel({
-		loop:true,
-		margin:10,
-		nav:true,
-		center:true,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:3
-			},
-			1000:{
-				items:3
+		$('.protfolio-active').owlCarousel({
+			loop:true,
+			margin:10,
+			nav:true,
+			navText: ['<i class="fal fa-long-arrow-left"></i>','<i class="fal fa-long-arrow-right"></i>'],
+			center:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				576:{
+					items:1
+				},
+				768:{
+					items:2
+				},
+				992:{
+					items:2
+				},
+				1140:{
+					items:3
+				}
 			}
+		})
+	// Popup Gallery 
+	$('.popup-image').magnificPopup({
+		type: 'image',
+		gallery: {
+		  enabled: true
 		}
 	});
-
 
 	/*------------------------------------
         Overlay Close

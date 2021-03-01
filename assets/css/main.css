@@ -1218,12 +1218,12 @@ label {
   .appoinment-area .appoinment-box .appoinment-from textarea {
     height: 100px;
   }
-}
-.theme-button {
-  margin-right: 0;
-  padding: 15px 30px;
-}
 
+  .theme-button {
+    margin-right: 0;
+    padding: 15px 30px;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .appoinment-area .appointment-form-box {
     margin-top: 0;
@@ -1242,6 +1242,8 @@ label {
 }
 .protfolio-area .single-protfolio {
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .protfolio-area .single-protfolio .protfolio-image {
   overflow: hidden;
@@ -1249,6 +1251,11 @@ label {
 .protfolio-area .single-protfolio .protfolio-image img {
   max-width: 100%;
   width: 100%;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 .protfolio-area .single-protfolio .protfolio-image::before {
   position: absolute;
@@ -1268,7 +1275,7 @@ label {
   transition: all 0.3s linear 0s;
 }
 .protfolio-area .single-protfolio .protfolio-image:hover:before {
-  height: 90%;
+  height: 82%;
   opacity: 0.95;
   bottom: 50%;
   visibility: visible;
@@ -1285,7 +1292,7 @@ label {
   transform: scale(1.1);
 }
 .protfolio-area .single-protfolio .protfolio-image:hover > .protfolio-content {
-  bottom: 60px;
+  bottom: 80px;
   opacity: 1;
   visibility: visible;
   z-index: 99;
@@ -1360,8 +1367,105 @@ label {
   color: #eea676;
 }
 
-.protfolio-active .single-protfolio .owl-item .center img {
+.protfolio-active .owl-item.active.center {
   transform: scale(1.1);
+}
+.protfolio-active .owl-nav .owl-prev {
+  position: absolute;
+  left: 60px;
+  color: #fff !important;
+  font-size: 50px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-active .owl-nav .owl-prev:hover {
+  color: #eea676 !important;
+}
+.protfolio-active .owl-nav .owl-prev::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 47%;
+  transform: translateY(-50%);
+  left: -17px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-active .owl-nav .owl-prev:hover:before {
+  border-color: #eea676;
+}
+.protfolio-active .owl-nav .owl-next {
+  position: absolute;
+  right: 60px;
+  color: #fff !important;
+  font-size: 50px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-active .owl-nav .owl-next::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 47%;
+  transform: translateY(-50%);
+  right: -17px;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.protfolio-active .owl-nav .owl-next:hover:before {
+  border-color: #eea676;
+}
+.protfolio-active .owl-nav .owl-next:hover {
+  color: #eea676 !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .protfolio-area {
+    background-color: red;
+  }
+}
+@media (max-width: 575.98px) {
+  .protfolio-active .owl-item.active.center {
+    transform: scale(1.1);
+  }
+  .protfolio-active .owl-nav .owl-prev {
+    top: -50px;
+    left: 20px;
+    color: #005046 !important;
+  }
+  .protfolio-active .owl-nav .owl-prev::before {
+    border-color: #005046;
+  }
+  .protfolio-active .owl-nav .owl-next {
+    top: -50px;
+    right: 20px;
+    color: #005046 !important;
+  }
+  .protfolio-active .owl-nav .owl-next::before {
+    border-color: #005046;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
