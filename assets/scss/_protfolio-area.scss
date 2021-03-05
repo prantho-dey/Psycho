@@ -179,6 +179,8 @@
 }
 
 
+
+
 // Responsive
 
 // Large devices (desktops, 992px and up)
@@ -188,12 +190,13 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .protfolio-area {
-        background-color: red;
-    }
+   
 }
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
+    .protfolio-area {
+        padding-bottom: 60px;
+    }
     .protfolio-active {
         .owl-item.active.center {
             transform: scale(1.1);
@@ -216,6 +219,48 @@
                 }
             }
         }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .protfolio-area {
+        padding-bottom: 60px;
+    }
+}
+
+
+
+
+// Brand Area Css Code Here
+.brand-items img {
+	width: 186px !important;
+	height: 70px;
+}
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .brand-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .brand-items img {
+        width: 100% !important;
+        height: 100%;
     }
     
 }

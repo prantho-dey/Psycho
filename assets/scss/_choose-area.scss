@@ -1,0 +1,157 @@
+.choose-area {
+    .single-choose {
+        &:hover .choose-image img {
+            transform: scale(1.1);
+        }
+        .choose-image {
+            overflow: hidden;
+            @include transition(0.3s);
+            img {
+                width: 100%;
+                max-width: 100%;
+                @include transition(0.3s);
+            }
+        }
+        .popular {
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                position: absolute;
+                content: "Popular";
+                padding-top: 16px;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: $theme-color;
+                width: 178px;
+                height: 50px;
+                top: 10px;
+                right: -49px;
+                transform: rotate(45deg);
+                z-index: 99;
+            }
+        }
+        .choose-content {
+            background-color: #fbf7f3;
+            position: relative;
+            margin-top: 20px;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            .content-dollar {
+                width: 140px;
+                height: 140px;
+                background-color: #fff;
+                text-align: center;
+                border-radius: 50%;
+                border: 10px solid $theme-color-2;
+                line-height: 130px !important;
+                position: absolute;
+                top: -45%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                @include transition(0.3s);
+                h3 {
+                    font-size: 36px;
+                    font-family: "Rubik";
+                    text-align: center;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @include transition(0.3s);
+
+                    span {
+                        display: block;
+                        color: #ddd;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        margin-top: 10px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            h2 {
+                font-size: 36px;
+                margin-bottom: 30px;
+                text-transform: capitalize;
+                line-height: 1;
+                margin-top: 30px;
+            }
+            p {
+                font-size: 16px;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+            }
+        }
+        .choose-button {
+            margin-top: -27px;
+            z-index: 999;
+            position: relative;
+        }
+    }
+}
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .choose-area {
+        padding-bottom: 60px;
+        .single-choose {
+            margin-bottom: 60px;
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .choose-area {
+        padding-top: 60px;
+        padding-bottom: 0px;
+        .single-choose {
+            margin-bottom: 60px;
+
+            .choose-content {
+                .content-dollar {
+                    width: 120px;
+                    height: 120px;
+                    top: -36%;
+                    border: 5px solid $theme-color-2;
+                    h3 {
+                        font-size: 30px;
+                        font-weight: 400;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .choose-area {
+        padding-top: 60px;
+        padding-bottom: 0px;
+        .single-choose {
+            margin-bottom: 60px;
+        }
+    }
+}

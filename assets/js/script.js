@@ -37,6 +37,7 @@
 			dotsData:true,
 			autoplay: true,
 			autoplayTimeout: 5000,
+			autoplayHoverPause:true,
 		});
 	
 		carousel_slider.on('translate.owl.carousel', function () {
@@ -71,6 +72,9 @@
 			loop:true,
 			margin:10,
 			nav:true,
+			autoplay: true,
+			autoplayTimeout: 10000,
+			autoplayHoverPause:true,
 			navText: ['<i class="fal fa-long-arrow-left"></i>','<i class="fal fa-long-arrow-right"></i>'],
 			center:true,
 			responsive:{
@@ -91,6 +95,35 @@
 				}
 			}
 		})
+
+
+	// Brand Slider
+		$('.brand-active').owlCarousel({
+			loop:true,
+			margin:10,
+			autoplay: true,
+			autoplayTimeout: 7000,
+			autoplayHoverPause:true,
+			nav:false,
+			responsive:{
+				0:{
+					items:1
+				},
+				576:{
+					items:2
+				},
+				768:{
+					items:2
+				},
+				992:{
+					items:3
+				},
+				1140:{
+					items:5
+				}
+			}
+		})
+
 	// Popup Gallery 
 	$('.popup-image').magnificPopup({
 		type: 'image',
