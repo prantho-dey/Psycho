@@ -1648,19 +1648,19 @@ label {
     margin-bottom: 60px;
   }
 }
-.container-area .contact-title .contact-top .top-content p {
+.contact-area .contact-title .contact-top .top-content p {
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   margin-left: 15px;
 }
-.container-area .contact-title h2 {
+.contact-area .contact-title h2 {
   font-size: 46px;
   color: #fff;
   margin-top: 20px;
   margin-bottom: 60px;
 }
-.container-area .container-form input {
+.contact-area .container-form input {
   height: 70px;
   width: 100%;
   padding: 0 20px;
@@ -1668,20 +1668,20 @@ label {
   color: #fff;
   border: 0;
 }
-.container-area .container-form input::-moz-placeholder {
+.contact-area .container-form input::-moz-placeholder {
   color: #fff;
   font-size: 16px;
   opacity: 1;
 }
-.container-area .container-form input::placeholder {
+.contact-area .container-form input::placeholder {
   color: #fff;
   font-size: 16px;
   opacity: 1;
 }
-.container-area .container-form .subject {
+.contact-area .container-form .subject {
   position: relative;
 }
-.container-area .container-form .subject::after {
+.contact-area .container-form .subject::after {
   position: absolute;
   content: "";
   font-family: "Font Awesome 5 Pro";
@@ -1691,7 +1691,7 @@ label {
   color: #fff;
   right: 20px;
 }
-.container-area .container-form .subject select {
+.contact-area .container-form .subject select {
   height: 70px;
   width: 100%;
   padding: 0 20px;
@@ -1701,7 +1701,7 @@ label {
   -moz-appearance: none;
   appearance: none;
 }
-.container-area .container-form textarea {
+.contact-area .container-form textarea {
   width: 100%;
   height: 140px;
   padding: 20px 20px;
@@ -1711,22 +1711,109 @@ label {
   resize: none;
   margin-bottom: 20px;
 }
-.container-area .container-form textarea::-moz-placeholder {
+.contact-area .container-form textarea::-moz-placeholder {
   color: #fff;
   font-size: 16px;
   opacity: 1;
 }
-.container-area .container-form textarea::placeholder {
+.contact-area .container-form textarea::placeholder {
   color: #fff;
   font-size: 16px;
   opacity: 1;
 }
-.container-area .our-map iframe {
+.contact-area .our-map iframe {
   width: 100%;
   height: 870px;
   margin-top: -180px;
   transform: translateX(15px) !important;
   border-radius: 30px 0 0 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-area {
+    background-image: none;
+  }
+  .contact-area .contact-title h2 {
+    color: #f00;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-area {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .contact-area .our-map iframe {
+    margin-top: 60px;
+    border-radius: 0 0 0 0;
+    height: 600px;
+    transform: translateX(0) !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-area {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contact-area .contact-title h2 {
+    font-size: 30px;
+  }
+  .contact-area .container-form input {
+    height: 50px;
+    font-size: 12px;
+  }
+  .contact-area .container-form input::-moz-placeholder {
+    color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    font-size: 12px;
+  }
+  .contact-area .container-form input::placeholder {
+    color: #fff;
+    font-size: 16px;
+    opacity: 1;
+    font-size: 12px;
+  }
+  .contact-area .container-form textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+  }
+  .contact-area .container-form textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .contact-area .container-form textarea::placeholder {
+    font-size: 12px;
+  }
+  .contact-area .container-form .subject select {
+    height: 50px;
+    font-size: 12px;
+  }
+  .contact-area .our-map iframe {
+    margin-top: 30px;
+    border-radius: 0 0 0 0;
+    height: auto;
+    transform: translateX(0px) !important;
+  }
+
+  .contact-btn {
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact-area {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contact-area .our-map iframe {
+    margin-top: 60px;
+    border-radius: 0 0 0 0;
+    height: 400px;
+    transform: translateX(0) !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
