@@ -124,6 +124,32 @@
 			}
 		})
 
+
+	// Feedback Slider
+		$('.feedback-slider').owlCarousel({
+			loop:true,
+			margin:20,
+			autoplay: true,
+			autoplayTimeout: 7000,
+			autoplayHoverPause:true,
+			nav:true,
+			navText: ['<i class="fal fa-long-arrow-left"></i>','<i class="fal fa-long-arrow-right"></i>'],
+			responsive:{
+				0:{
+					items:1,
+				},
+				480:{
+					items:1,
+				},
+				768:{
+					items:2,
+				},
+				992: {
+					items:3,
+				},
+			}
+		})
+
 	// Popup Gallery 
 	$('.popup-image').magnificPopup({
 		type: 'image',
