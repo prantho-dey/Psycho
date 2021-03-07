@@ -74,4 +74,124 @@
             }
         }
     }
+    .footer-contact {
+        h4 {
+            color: #fff;
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 20px;
+                display: block;
+                font-size: 16px;
+                color: $pragraph-color;
+                span {
+                    display: block;
+                    margin-bottom: 5px;
+                    color: $theme-color-2;
+                }
+            }
+        }
+        input {
+            width: 100%;
+            height: 70px;
+            border-radius: 40px 5px;
+            border: 0;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-button {
+            border: 0;
+
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+    
+}
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #555;
+    padding: 20px 0;
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .footer {
+        .footer-logo {
+            a {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   .footer {
+       padding-bottom: 60px;
+       
+       .c-footer {
+           margin-bottom: 60px;
+       }
+   }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .footer {
+        padding-bottom: 0px;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .c-footer {
+            margin-bottom: 60px;
+        }
+        .footer-contact {
+            input {
+                width: 80%;
+                height: 60px;
+            }
+        }
+    }
+    .copy-right {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer {
+        padding-bottom: 60px;
+        .c-footer {
+            margin-bottom: 60px;
+        }
+        .footer-logo {
+            a {
+                margin-right: 0px;
+            }
+        }
+    }
 }
