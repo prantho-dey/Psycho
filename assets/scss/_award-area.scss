@@ -1,0 +1,109 @@
+.footer-area {
+    background-color: #000;
+}
+.award-area {
+    .award-title {
+        h3 {
+            font-size: 50px;
+            color: #fff;
+            background-color: $theme-color;
+            padding: 50px;
+            margin: 0;
+            margin-left: -15px;
+        }
+    }
+    .award-active {
+        .single-award {
+            img {
+                width: 130px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .award-area {
+        .award-title h3 {
+            padding: 30px;
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .award-area {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .award-title {
+            padding-bottom: 30px;
+            h3 {
+                margin-right: -15px;
+            }
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .footer-area {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 60px;
+    }
+    .award-area {
+         background-size: cover;
+         background-position: center center;
+         background-repeat: no-repeat;
+         .award-title {
+             margin-bottom: 30px;
+             h3 {
+                 margin-right: -15px;
+                 font-size: 40px;
+                 padding: 20px;
+             }
+         }
+     }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .footer-area {
+       padding-left: 30px;
+       padding-right: 30px;
+       padding-top: 60px;
+   }
+   .award-area {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .award-title {
+            margin-bottom: 30px;
+            h3 {
+                margin-right: -15px;
+            }
+        }
+    }
+}

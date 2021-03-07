@@ -2,4 +2,158 @@
     padding-top: 220px;
     margin-left: 100px;
     margin-right: 100px;
+
+    .single-popular {
+        overflow: hidden;
+        @include transition(.3s);
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+        .popular-content {
+            background-color: #fbf7f3;
+            padding: 40px 30px;
+            border-radius: 0 0 30px 0;
+            margin-right: 80px;
+            margin-top: -80px;
+            position: relative;
+            z-index: 2;
+
+            p {
+                font-size: 16px;
+                text-transform: capitalize;
+                padding: 0;
+                margin: 0;
+                line-height: 1;
+
+                i {
+                    color: $theme-color-2;
+                    margin-right: 10px;
+                }
+            }
+            h3 {
+                font-size: 26px;
+                margin: 0;
+                padding: 20px 0;
+            }
+            a {
+                display: inline-block;
+                color: $pragraph-color;
+                margin-right: 20px;
+                font-size: 16px;
+                @include transition(.3s);
+
+                i {
+                    color: $theme-color-2;
+                    margin-right: 5px;
+                    @include transition(.3s);
+                }
+                &:hover {
+                    color: $theme-color;
+                }
+                &:hover i {
+                    color: $theme-color;
+                }
+            }
+            .date {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                top: 0;
+                right: 0;
+                text-align: center;
+                padding: 15px;
+                background-color: $theme-color;
+
+                h2 {
+                    font-size: 30px;
+                    color: #fff;
+                    line-height: 1;
+                    margin: 0;
+                    padding: 0;
+                    font-family: Myriad Pro;
+                }
+                span {
+                    font-size: 14px;
+                    color: #fff;
+                    display: block;
+                    line-height: 1;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .popular-area {
+        .single-popular {
+            .popular-content {
+                margin-right: 0;
+                a {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .popular-area {
+        padding-bottom: 60px;
+        .single-popular {
+            margin-bottom: 60px;
+           .popular-content {
+               margin-right: 40px;
+               margin-top: -40px;
+
+               a {
+                   margin-bottom: 10px;
+               }
+           }
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .popular-area {
+        padding-top: 60px;
+        padding-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        .single-popular {
+            margin-bottom: 60px;
+
+            .popular-content {
+                margin-right: 0;
+
+                a {
+                    margin-bottom: 10px;
+                }
+                .date {
+                    width: 60px;
+                    height: 60px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .popular-area {
+       padding-bottom: 60px;
+       margin-left: 30px;
+       margin-right: 30px;
+       .single-popular {
+           margin-bottom: 60px;
+       }
+   }
 }

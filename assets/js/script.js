@@ -150,6 +150,30 @@
 			}
 		})
 
+
+	// Award Slider
+		$('.award-active').owlCarousel({
+			loop:true,
+			margin:20,
+			nav:false,
+			autoplay: true,
+			autoplayTimeout: 10000,
+			responsive:{
+				0:{
+					items:2,
+				},
+				480:{
+					items:3,
+				},
+				768:{
+					items:4,
+				},
+				992: {
+					items:5,
+				},
+			}
+		})
+
 	// Popup Gallery 
 	$('.popup-image').magnificPopup({
 		type: 'image',
