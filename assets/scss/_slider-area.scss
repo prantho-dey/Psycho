@@ -25,6 +25,12 @@
             z-index: 9;
             padding-top: 170px;
             padding-bottom: 130px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
         }
     }
 }

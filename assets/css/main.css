@@ -573,6 +573,11 @@ label {
   padding-top: 170px;
   padding-bottom: 130px;
 }
+.slider-area .single-slider .slider-thumb img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
 
 .s-btn {
   background-color: #fff;
@@ -1868,12 +1873,16 @@ label {
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  height: calc(100% - 20px);
+  display: flex;
+  flex-direction: column;
 }
 .feedback-area .feedback-slider .single-slider .feedback-content {
   padding-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  flex-grow: 1;
 }
 .feedback-area .feedback-slider .single-slider .feedback-content ul {
   list-style: none;
@@ -1926,6 +1935,9 @@ label {
   padding: 0;
 }
 
+.feedback-slider .owl-stage {
+  display: flex;
+}
 .feedback-slider .owl-nav .owl-prev {
   position: absolute;
   left: -60px;
@@ -2206,6 +2218,7 @@ label {
 }
 .award-area .award-active .single-award img {
   width: 130px;
+  margin: auto;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
