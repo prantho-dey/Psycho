@@ -532,6 +532,18 @@ label {
   z-index: -1;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: #005046;
+  animation-name: fadeInDown !important;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 .slider-area {
   position: relative;
 }
@@ -886,6 +898,29 @@ label {
   color: #fff;
 }
 
+.scroll-top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #005046;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.scroll-top-button:hover {
+  background-color: #eea676;
+  color: #fff;
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .section-title h2 {
     font-size: 46px;
@@ -905,12 +940,20 @@ label {
   .section-title p {
     font-size: 14px;
   }
+
+  .scroll-top-button {
+    right: 5px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .section-title h2 {
     font-size: 38px;
     padding-top: 10px;
     padding-bottom: 5px;
+  }
+
+  .scroll-top-button {
+    right: 5px;
   }
 }
 .services-area .services-box {

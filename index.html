@@ -39,32 +39,32 @@
                        <div class="main-menu">
                            <nav>
                                <ul>
-                                   <li><a href="#">Home</a>
+                                   <li><a href="#home">Home</a>
                                     <ul class="submenu">
                                         <li><a href="#">Home Style 1</a></li>
                                         <li><a href="#">Home Style 2</a></li>
                                         <li><a href="#">Home Style 3</a></li>
                                     </ul>
                                 </li>
-                                   <li><a href="#">About</a>
+                                   <li><a href="#about">About</a>
                                     <ul class="submenu">
                                         <li><a href="#">About</a></li>
                                         <li><a href="#">About Me</a></li>
                                     </ul>
                                 </li>
-                                   <li><a href="#">Services</a>
+                                   <li><a href="#service">Services</a>
                                     <ul class="submenu">
                                         <li><a href="#">Services</a></li>
                                         <li><a href="#">Services Details</a></li>
                                     </ul>
                                 </li>
-                                   <li><a href="#">Case</a>
+                                   <li><a href="#case">Case</a>
                                     <ul class="submenu">
                                         <li><a href="#">Our Case</a></li>
                                         <li><a href="#">Case Details</a></li>
                                     </ul>
                                 </li>
-                                   <li><a href="#">Pages</a>
+                                   <li><a href="#pages">Pages</a>
                                     <ul class="submenu">
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">About Me</a></li>
@@ -74,8 +74,8 @@
                                         <li><a href="#">Our Event</a></li>
                                     </ul>
                                 </li>
-                                   <li><a href="#">Blog</a></li>
-                                   <li><a href="#">Contact</a></li>
+                                   <li><a href="#blog">Blog</a></li>
+                                   <li><a href="#contact">Contact</a></li>
                                </ul>
                            </nav>
                        </div>
@@ -98,7 +98,7 @@
    <!-- Header End Here -->
 
    <!-- Slider Area Start Here -->
-   <div class="slider-area" style="background-image: url('assets/img/background/slider-bg.jpg');">
+   <div class="slider-area" style="background-image: url('assets/img/background/slider-bg.jpg');" id="home">
        <div class="container-fluid p-0">
            <div class="slider owl-carousel">
                 <div class="single-slider" data-dot="<span>01</span>">
@@ -198,7 +198,7 @@
 
 
    <!-- Welcome Area Start Here -->
-   <div class="welcome-area pl-100 pr-100 pb-120">
+   <div class="welcome-area pl-100 pr-100 pb-120" id="about">
        <div class="container-fluid">
            <div class="row">
                <div class="col-xl-6 col-lg-6">
@@ -278,7 +278,7 @@
    <!-- Welcome Area End Here -->
 
    <!-- Services Area Start Here -->
-   <div class="services-area pb-120">
+   <div class="services-area pb-120" id="service">
        <div class="container">
            <div class="row">
                <div class="col-xl-8 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -486,7 +486,7 @@
 
 
    <!-- Protfolio Area Start Here -->
-   <div class="protfolio-area pb-120">
+   <div class="protfolio-area pb-120" id="case">
        <div class="container-fluid">
             <div class="row no-gutters protfolio-active owl-carousel">
                 <div class="col-12">
@@ -601,7 +601,7 @@
 
 
    <!-- Choose Area Start Here -->
-   <div class="choose-area pt-120 pb-200">
+   <div class="choose-area pt-120 pb-200" id="pages">
        <div class="container">
         <div class="row">
             <div class="col-xl-8 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -674,7 +674,7 @@
 
 
    <!-- Contact Area Start Here -->
-   <div class="contact-area pt-120 pl-100" style="background-image: url('assets/img/background/slider-bg.jpg');">
+   <div class="contact-area pt-120 pl-100" style="background-image: url('assets/img/background/slider-bg.jpg');" id="contact">
        <div class="container-fluid">
            <div class="row">
                <div class="col-lg-5">
@@ -732,7 +732,7 @@
 
 
    <!-- Feedback Area Start Here -->
-   <div class="feedback-area pt-120" style="background-image: url('assets/img/background/dr.bg.jpg');">
+   <div class="feedback-area pt-120" style="background-image: url('assets/img/background/dr.bg.jpg');" >
        <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -856,7 +856,7 @@
 
 
     <!-- Popular Area Start Here -->
-    <div class="popular-area pb-120">
+    <div class="popular-area pb-120" id="blog">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
@@ -1018,13 +1018,15 @@
     </div>
     <!-- Footer Area End Here -->
 
-
+    <!-- Scroll TopButton -->
+    <a href="#" class="scroll-top-button"><i class="fas fa-level-up-alt"></i></a>
 
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/one-page-nav-min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>

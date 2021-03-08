@@ -26,6 +26,9 @@
 		}
 	});
 
+	
+
+
 	// Main Slider
 	if (jQuery(".slider").length > 0) {
 
@@ -182,6 +185,21 @@
 		}
 	});
 
+	// Scroll-top-button
+	$('.scroll-top-button').click(function(){
+		$('html').animate({'scrollTop':'0px'},2000) ;
+	});
+
+	$(window).scroll(function(){
+
+		var scroll = jQuery(window).scrollTop();
+
+		if (scroll > 300) {
+			$('.scroll-top-button').show();
+		}else{
+			$('.scroll-top-button').hide();
+		}
+	});
 	/*------------------------------------
         Overlay Close
 	--------------------------------------*/
@@ -196,6 +214,13 @@
 	$('#scrollUp').on('click', function () {
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
+	});
+
+	// One Page Nav
+	var top_offset = $('.header-area').height() - 10;
+	$('.main-menu nav ul').onePageNav({
+		currentClass: 'active',
+		scrollOffset: top_offset,
 	});
 
 

@@ -145,3 +145,15 @@
     z-index: -1;
 }
 
+
+.sticky-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+    background-color: $theme-color;
+    animation-name: fadeInDown !important;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}

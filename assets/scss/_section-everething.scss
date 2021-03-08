@@ -40,6 +40,27 @@
     }
 }
 
+// Scroll Top Button 
+.scroll-top-button {
+	position: fixed;
+	right: 30px;
+	bottom: 25px;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: $theme-color;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+    z-index: 999;
+    @include transition(.3s);
+
+    &:hover {
+        background-color: $theme-color-2;
+        color: #fff;
+    }
+}
+
 // Responsive
 
 // Large devices (desktops, 992px and up)
@@ -70,6 +91,10 @@
             font-size: 14px;
         }
     }
+    // Scroll Top Button 
+    .scroll-top-button {
+        right: 5px;
+    }
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -79,5 +104,9 @@
             padding-top: 10px;
             padding-bottom: 5px;
         }
+    }
+    // Scroll Top Button 
+    .scroll-top-button {
+        right: 5px;
     }
 }
